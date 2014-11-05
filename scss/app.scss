@@ -1,3 +1,14 @@
+body {
+    background: url("../images/background.jpg") 50% no-repeat fixed;
+    background-size: 2000px;
+}
+
+.main-body-row {
+    background: white;
+    padding: 20px;
+}
+
+
 @import "settings";
 @import "foundation";
 

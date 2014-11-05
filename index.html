@@ -28,6 +28,8 @@
                         <li class="name">
                             <h1><a href="#">Home</a></h1>
                         </li>
+                         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
                     </ul>
 
                     <section class="top-bar-section">
@@ -37,50 +39,112 @@
                                 <a href="#">Events</a>
                                 <ul class="dropdown">
                                     <li class="active"><a href="#">Local Events</a></li>
-                                    <li><a href="#">National Events</a></li>
+                                    <li><a href="#">National Tour</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Photos</a></li>
-                            <li><a href="#">About</a></li>
+                            <li class="has-dropdown">
+                                <a href="#">Courses</a>
+                                <ul class="dropdown">
+                                    <li class="active"><a href="#">Course Search</a></li>
+                                    <li><a href="#">Course Directory</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Media</a>
+                                <ul class="dropdown">
+                                    <li class="active"><a href="#">Photos</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">About</a>
+                                <ul class="dropdown">
+                                    <li class="active"><a href="#">About Disc Golf</a></li>
+                                    <li><a href="#">About Me</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </section>
                 </nav>
             </div> <!-- End Nav Bar Row -->
             
             <!-- Main Body Row -->
-            <div class="row">
+            <div class="row  main-body-row">
                 <!-- Main Data Column -->
                 <div class="column small-12 medium-8">
                     <div class="row">
                         <ul class="example-orbit" data-orbit>
                             <li>
-                                <img src="http://placehold.it/1000x300" alt="slide 1" />
+                                <img src="http://placehold.it/1000x500" alt="slide 1" />
                                 <div class="orbit-caption">
                                     Caption One.
                                 </div>
                             </li>
                             <li class="active">
-                                <img src="http://placehold.it/1000x300" alt="slide 2" />
+                                <img src="http://placehold.it/1000x500" alt="slide 2" />
                                 <div class="orbit-caption">
                                     Caption Two.
                                 </div>
                             </li>
                             <li>
-                                <img src="http://placehold.it/1000x300" alt="slide 3" />
+                                <img src="http://placehold.it/1000x500" alt="slide 3" />
                                 <div class="orbit-caption">
                                     Caption Three.
                                 </div>
                             </li>
+                            <li>
+                                <img src="http://placehold.it/1000x500" alt="slide 4" />
+                                <div class="orbit-caption">
+                                    Caption Four.
+                                </div>
+                            </li>
+                            <li>
+                                <img src="http://placehold.it/1000x500" alt="slide 5" />
+                                <div class="orbit-caption">
+                                    Caption Five.
+                                </div>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="row">
+                        <a href="#"><h4>National Tour Has Ended</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate varius quam ac iaculis. Morbi sollicitudin urna ex, in facilisis libero sollicitudin non. Nam placerat egestas magna, non consequat quam malesuada ac. Integer magna nisl, vestibulum sit amet ligula vel, rutrum pellentesque lorem. Duis varius nisi at purus facilisis commodo. Praesent consectetur in nibh in porta. Morbi eu fringilla metus, eget viverra felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ultrices quis nulla nec tempus. Praesent ex neque, consequat et faucibus id, aliquam vitae ante. Duis arcu libero, porttitor vitae porta ut, euismod nec massa. Nunc vitae nibh finibus, tincidunt risus dictum, egestas ante. Sed vel nibh ut mi ornare facilisis. Integer ac mi lectus...
+                        <a href="#">[Read More]</a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#"><h4>What's the latest?</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate varius quam ac iaculis. Morbi sollicitudin urna ex, in facilisis libero sollicitudin non. Nam placerat egestas magna, non consequat quam malesuada ac. Integer magna nisl, vestibulum sit amet ligula vel, rutrum pellentesque lorem. Duis varius nisi at purus facilisis commodo. Praesent consectetur in nibh in porta. Morbi eu fringilla metus, eget viverra felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ultrices quis nulla nec tempus. Praesent ex neque, consequat et faucibus id, aliquam vitae ante. Duis arcu libero, porttitor vitae porta ut, euismod nec massa. Nunc vitae nibh finibus, tincidunt risus dictum, egestas ante. Sed vel nibh ut mi ornare facilisis. Integer ac mi lectus...
+                        <a href="#">[Read More]</a>
+                        </p>
                     </div>
                 </div> <!-- End Main Data Column -->
                 
                 <!-- Subscribe Column -->
                 <div class="column small-12 medium-4">
-                    
+                    <form>
+                        <fieldset>
+                            <legend>Subscribe to the Newsletter</legend>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <input type="text" id="right-label" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <input type="text" id="right-label" placeholder="Email">
+                                    </div>
+                                </div>
+                                <input class="button small small-12" type="submit" value="Subscribe" />
+                        </fieldset>
+                    </form>
                 </div> <!-- End Subscribe Column -->
             </div> <!-- End Main Body Row -->
+            
+            <!-- Footer Row -->
+            <div class="row footer">
+                
+            </div> <!-- End Footer Row -->
         </div> <!-- End Main Column -->
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
