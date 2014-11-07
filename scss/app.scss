@@ -2,8 +2,11 @@
 @import "foundation";
 
 body {
-    background: url("../images/background(2).jpg") 0 75% no-repeat fixed;
-    background-size: 2000px;
+    background: url(../images/background.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .footer {
