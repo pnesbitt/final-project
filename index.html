@@ -8,9 +8,14 @@
 
         <link rel="stylesheet" href="css/app.css">
 
+        <!-- include the core styles -->
+        <link rel="stylesheet" href="bower_components/alertify/themes/alertify.core.css" />
+        <!-- include a theme, can be included into the core instead of 2 separate files -->
+        <link rel="stylesheet" href="bower_components/alertify/themes/alertify.default.css" />
+       
         <!-- My CSS -->
         <link rel="stylesheet" href="scss/app.scss">
-       
+        
         <script src="bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
@@ -64,33 +69,27 @@
                     <div class="row">
                         <ul class="example-orbit" data-orbit>
                             <li>
-                                <img src="http://placehold.it/1000x500" alt="slide 1" />
+                                <img src="images/slider-1.jpg" alt="slide 1" />
                                 <div class="orbit-caption">
-                                    Caption One.
+                                    Making the putt
                                 </div>
                             </li>
                             <li class="active">
-                                <img src="http://placehold.it/1000x500" alt="slide 2" />
+                                <img src="images/slider-2.jpg" alt="slide 2" />
                                 <div class="orbit-caption">
-                                    Caption Two.
+                                    Smashing chains
                                 </div>
                             </li>
                             <li>
-                                <img src="http://placehold.it/1000x500" alt="slide 3" />
+                                <img src="images/slider-3.jpg" alt="slide 3" />
                                 <div class="orbit-caption">
-                                    Caption Three.
+                                    Over the lake
                                 </div>
                             </li>
                             <li>
-                                <img src="http://placehold.it/1000x500" alt="slide 4" />
+                                <img src="images/slider-4.jpg" alt="slide 4" />
                                 <div class="orbit-caption">
-                                    Caption Four.
-                                </div>
-                            </li>
-                            <li>
-                                <img src="http://placehold.it/1000x500" alt="slide 5" />
-                                <div class="orbit-caption">
-                                    Caption Five.
+                                    Driving
                                 </div>
                             </li>
                         </ul>
@@ -110,21 +109,21 @@
                 </div> <!-- End Main Data Column -->
                 
                 <!-- Subscribe Column -->
-                <div class="column small-12 medium-4">
+                <div class="column small-12 medium-4 newsletter">
                     <form>
                         <fieldset>
                             <legend>Subscribe to the Newsletter</legend>
                                 <div class="row">
-                                    <div class="small-12 columns">
+                                    <div class="small-12 columns newsletter-name">
                                         <input type="text" id="right-label" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="small-12 columns">
+                                    <div class="small-12 columns newsletter-email">
                                         <input type="text" id="right-label" placeholder="Email">
                                     </div>
                                 </div>
-                                <input class="button small small-12" type="submit" value="Subscribe" />
+                                <a href="#" class="button expand newsletter-submit">Submit</a>
                         </fieldset>
                     </form>
                 </div> <!-- End Subscribe Column -->
@@ -138,6 +137,7 @@
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <script src="bower_components/alertify/alertify.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
