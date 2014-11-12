@@ -24,3 +24,20 @@ body {
     max-width: 900px;
     margin: 0 auto;
 }
+
+.course-list {
+    border: 1px solid black;
+    padding: 5px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.course-list-item {
+    background-color: white;
+    color: black;
+}
+
+.course-list-item:hover {
+    background-color: #D1F0FF;
+    color: black;
+}
