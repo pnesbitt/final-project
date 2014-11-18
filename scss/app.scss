@@ -1,6 +1,9 @@
 @import "settings";
 @import "foundation";
 
+/* ---------------------------------------------- */
+/* Overall -------------------------------------- */
+/* ---------------------------------------------- */
 body {
     background: url(../images/background.jpg) no-repeat center center fixed; 
     background-size: cover;
@@ -9,22 +12,44 @@ body {
     -o-background-size: cover;
 }
 
-.footer {
-    background: black;
-    color: gray;
-    padding: 20px;
+a {
+    color: #006600;
 }
 
+a:hover {
+    color: #70AA70;
+}
+
+/* ---------------------------------------------- */
+/* Main Body ------------------------------------ */
+/* ---------------------------------------------- */
 .main-body-row {
     background: white;
     padding: 20px;
 }
 
+/* ---------------------------------------------- */
+/* Index (Home) --------------------------------- */
+/* ---------------------------------------------- */
+.newsletter-submit {
+    background-color: #006600;
+}
+
+.newsletter-submit:hover {
+    background-color: #70AA70;
+}
+
+/* ---------------------------------------------- */
+/* Events --------------------------------------- */
+/* ---------------------------------------------- */
 .calendar {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* ---------------------------------------------- */
+/* Courses -------------------------------------- */
+/* ---------------------------------------------- */
 .course-list {
     border: 1px solid black;
     padding: 5px;
@@ -38,16 +63,43 @@ body {
 }
 
 .course-list-item:hover {
-    background-color: #D1F0FF;
+    background-color: #70AA70;
     color: black;
 }
 
+.course-list-item-active {
+    background-color: #006600;
+    color: black;
+}
+
+/* ---------------------------------------------- */
+/* Gallery -------------------------------------- */
+/* ---------------------------------------------- */
 .photo-gallery-thumbnail {
     width: 200px;
     height: 200px;
 }
 
-.about-me-profile {
+/* ---------------------------------------------- */
+/* Overwrite Foundation's Clearing Gallery Hover  */
+/* ---------------------------------------------- */
+.th:hover ,.th:focus {
+    box-shadow: 0 0 6px 1px rgba(0, 102, 0, 1);
+}
+
+/* ---------------------------------------------- */
+/* About ---------------------------------------- */
+/* ---------------------------------------------- */
+.about-me-profile-image {
     width: 30%;
     margin: 10px;
+}
+
+/* ---------------------------------------------- */
+/* Footer --------------------------------------- */
+/* ---------------------------------------------- */
+.footer {
+    background: black;
+    color: gray;
+    padding: 20px;
 }
