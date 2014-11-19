@@ -47,6 +47,11 @@ a:hover {
 /* ---------------------------------------------- */
 /* Courses -------------------------------------- */
 /* ---------------------------------------------- */
+.course-view {
+    width: 100%;
+    height: 300px;
+}
+
 .course-list {
     border: 1px solid black;
     padding: 5px;
@@ -111,5 +116,11 @@ a:hover {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+    }
+}
+
+@media (min-width: 800px) {
+    .course-view {
+        height: 500px;
     }
 }
