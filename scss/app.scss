@@ -2,24 +2,11 @@
 @import "foundation";
 
 /* ---------------------------------------------- */
-/* Media Queries -------------------------------- */
-/* ---------------------------------------------- */
-@media (min-width: 300px) {
-    body {
-        background: none;
-        background-color: #006600;
-    }
-}
-
-/* ---------------------------------------------- */
 /* Overall -------------------------------------- */
 /* ---------------------------------------------- */
 body {
-    background: url(../images/background.jpg) no-repeat center center fixed; 
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: none;
+    background-color: #006600;
 }
 
 a {
@@ -112,4 +99,17 @@ a:hover {
     background: black;
     color: gray;
     padding: 20px;
+}
+
+/* ---------------------------------------------- */
+/* Media Queries -------------------------------- */
+/* ---------------------------------------------- */
+@media (min-width: 1200px) {
+    body {
+        background: url(../images/background.jpg) no-repeat center center fixed; 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
 }
